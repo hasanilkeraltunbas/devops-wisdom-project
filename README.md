@@ -30,8 +30,11 @@ To run this project on your local machine using **Kind**:
    kind create cluster --name wisdom-cluster
 
 2. **Apply Manifests**
+    ```bash
     kubectl apply -f k8s/
 
 3. **Access App:**
+    ```bash
     kubectl port-forward service/frontend-service 8080:80
+    
     Open http://localhost:8080 in your browser.
